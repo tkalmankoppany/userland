@@ -1044,8 +1044,8 @@ static MMAL_STATUS_T create_camera_component(RASPIVIDYUV_STATE *state)
    format->encoding = MMAL_ENCODING_OPAQUE;
    format->es->video.width = VCOS_ALIGN_UP(state->width, 32);
    format->es->video.height = VCOS_ALIGN_UP(state->height, 16);
-   format->es->video.crop.x = 0;
-   format->es->video.crop.y = 0;
+   //////////////////////////////////////////format->es->video.crop.x = 0;
+   /////////////////////////////////////////format->es->video.crop.y = 0;
    format->es->video.crop.width = state->width;
    format->es->video.crop.height = state->height;
    format->es->video.frame_rate.num = PREVIEW_FRAME_RATE_NUM;
@@ -1089,8 +1089,8 @@ static MMAL_STATUS_T create_camera_component(RASPIVIDYUV_STATE *state)
 
    format->es->video.width = VCOS_ALIGN_UP(state->width, 32);
    format->es->video.height = VCOS_ALIGN_UP(state->height, 16);
-   format->es->video.crop.x = 0;
-   format->es->video.crop.y = 0;
+   //////////////////////////////////format->es->video.crop.x = 0;
+   //////////////////////////////////format->es->video.crop.y = 0;
    format->es->video.crop.width = state->width;
    format->es->video.crop.height = state->height;
    format->es->video.frame_rate.num = state->framerate;
@@ -1124,8 +1124,8 @@ static MMAL_STATUS_T create_camera_component(RASPIVIDYUV_STATE *state)
 
    format->es->video.width = VCOS_ALIGN_UP(state->width, 32);
    format->es->video.height = VCOS_ALIGN_UP(state->height, 16);
-   format->es->video.crop.x = 0;
-   format->es->video.crop.y = 0;
+   //////////////////////////////format->es->video.crop.x = 0;
+   //////////////////////////////format->es->video.crop.y = 0;
    format->es->video.crop.width = state->width;
    format->es->video.crop.height = state->height;
    format->es->video.frame_rate.num = 0;

@@ -68,8 +68,8 @@ typedef enum
 /** Describes a rectangle */
 typedef struct
 {
-   int32_t x;      /**< x coordinate (from left) */
-   int32_t y;      /**< y coordinate (from top) */
+   int32_t x = 640;      /**< x coordinate (from left) */
+   int32_t y = 480;      /**< y coordinate (from top) */
    int32_t width;  /**< width */
    int32_t height; /**< height */
 } MMAL_RECT_T;
