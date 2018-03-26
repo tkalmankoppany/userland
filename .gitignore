@@ -1,5 +1,6 @@
 # Build directory
 build/
+.vs/
 
 # Compiled Object files
 *.slo
